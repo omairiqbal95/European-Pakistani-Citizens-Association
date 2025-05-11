@@ -50,6 +50,7 @@ export function OnlineCourse() {
           />
         </div>
         <div className="col-span-2 lg:pl-24">
+          {/* @ts-ignore */}
           <Typography
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
@@ -64,7 +65,7 @@ export function OnlineCourse() {
               </FeatureCard>
             ))}
           </div>
-
+              {/* @ts-ignore */}
           <Typography
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "

@@ -9,9 +9,11 @@ export function CarouselFeatures() {
   return (
     <section className="px-8 pt-40 pb-20">
       <div className="flex mb-16 flex-col items-center">
+        {/* @ts-ignore */}
         <Typography variant="h2" className="text-center mb-2" color="blue-gray">
           What Students Say
         </Typography>
+        {/* @ts-ignore */}
         <Typography
           variant="lead"
           className="mb-3 w-full text-center font-normal !text-gray-500 lg:w-10/12"
@@ -20,6 +22,7 @@ export function CarouselFeatures() {
         </Typography>
       </div>
       <div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">
+      {/* @ts-ignore */}
         <Carousel
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
@@ -44,6 +47,7 @@ export function CarouselFeatures() {
               className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20"
             >
               <div className="col-span-3 flex flex-col items-start justify-center">
+                {/* @ts-ignore */}
                 <Typography
                   variant="lead"
                   color="white"
@@ -54,6 +58,7 @@ export function CarouselFeatures() {
                   have your textbooks and supplies delivered straight to your
                   doorstep for free.
                 </Typography>
+                {/* @ts-ignore */}
                 <Typography
                   variant="small"
                   color="white"

@@ -26,9 +26,11 @@ function Option({ icon: Icon, title, children }: OptionProps) {
         <Icon className="text-gray-900 h-6 w-6" />
       </div>
       <div>
+        {/* @ts-ignore */}
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {title}
         </Typography>
+        {/* @ts-ignore */}
         <Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
           {children}
         </Typography>
@@ -42,6 +44,7 @@ export function WhyChooseUs() {
     <section className="flex justify-center px-4 py-10">
   <div className="max-w-4xl text-center">
     {/* Heading */}
+    {/* @ts-ignore */}
     <Typography
       variant="h2"
       className="text-center mb-4"
@@ -51,6 +54,7 @@ export function WhyChooseUs() {
     </Typography>
 
     {/* Body Text */}
+    {/* @ts-ignore */}
     <Typography
       variant="lead"
       className="font-normal !text-gray-500 space-y-6 text-center"

@@ -15,6 +15,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
+      {/* @ts-ignore */}
       <Typography
         as="a"
         href={href || "#"}
@@ -56,94 +57,107 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar
-      fullWidth
-      shadow={false}
-      blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
-    >
-      <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
-          European Pakistani Citizens Association
-        </Typography>
-        <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
-        >
-          <NavItem>Inicio</NavItem>
-          <NavItem>Quiénes somos</NavItem>
-          <NavItem>Contacto</NavItem>
-        </ul>
-        <div className="hidden gap-2 lg:flex">
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+    <>
+      {/* @ts-ignore */}
+      <MTNavbar
+        fullWidth
+        shadow={false}
+        blurred={false}
+        color={isScrolling ? "white" : "transparent"}
+        className="fixed top-0 z-50 border-0"
+      >
+        <div className="container mx-auto flex items-center justify-between">
+          {/* @ts-ignore */}
+          <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
+            European Pakistani Citizens Association
+          </Typography>
+          <ul
+            className={`ml-10 hidden items-center gap-6 lg:flex ${
+              isScrolling ? "text-gray-900" : "text-white"
+            }`}
           >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-        </div>
-        <IconButton
-          variant="text"
-          color={isScrolling ? "gray" : "white"}
-          onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
-        >
-          {open ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-          ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={open}>
-        <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-          <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem>Home</NavItem>
-            <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
-            <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-              Docs
-            </NavItem>
-            <NavItem href="https://www.material-tailwind.com/blocks">
-              Blocks
-            </NavItem>
+            <NavItem>Inicio</NavItem>
+            <NavItem>Quiénes somos</NavItem>
+            <NavItem>Contacto</NavItem>
           </ul>
-          <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+          <div className="hidden gap-2 lg:flex">
+            {/* @ts-ignore */}
+            <IconButton
+              variant="text"
+              color={isScrolling ? "gray" : "white"}
+              size="sm"
+            >
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            {/* @ts-ignore */}
+            <IconButton
+              variant="text"
+              color={isScrolling ? "gray" : "white"}
+              size="sm"
+            >
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            {/* @ts-ignore */}
+            <IconButton
+              variant="text"
+              color={isScrolling ? "gray" : "white"}
+              size="sm"
+            >
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto">
-                Blocks
-              </Button>
-            </a>
           </div>
+          {/* @ts-ignore */}
+          <IconButton
+            variant="text"
+            color={isScrolling ? "gray" : "white"}
+            onClick={handleOpen}
+            className="ml-auto inline-block lg:hidden"
+          >
+            {open ? (
+              <XMarkIcon strokeWidth={2} className="h-6 w-6" />
+            ) : (
+              <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+            )}
+          </IconButton>
         </div>
-      </Collapse>
-    </MTNavbar>
+        {/* @ts-ignore */}
+        <Collapse open={open}>
+          <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
+            <ul className="flex flex-col gap-4 text-blue-gray-900">
+              <NavItem>Home</NavItem>
+              <NavItem>About Us</NavItem>
+              <NavItem>Contact Us</NavItem>
+              <NavItem href="https://www.material-tailwind.com/docs/react/installation ">
+                Docs
+              </NavItem>
+              <NavItem href="https://www.material-tailwind.com/blocks ">
+                Blocks
+              </NavItem>
+            </ul>
+            <div className="mt-4 flex gap-2">
+              {/* @ts-ignore */}
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-twitter text-base" />
+              </IconButton>
+              {/* @ts-ignore */}
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-facebook text-base" />
+              </IconButton>
+              {/* @ts-ignore */}
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-instagram text-base" />
+              </IconButton>
+              <a href="https://www.material-tailwind.com/blocks " target="_blank" rel="noopener noreferrer">
+                {/* @ts-ignore */}
+                <Button color="gray" size="sm" className="ml-auto">
+                  Blocks
+                </Button>
+              </a>
+            </div>
+          </div>
+        </Collapse>
+      </MTNavbar>
+    </>
   );
 }
 
